@@ -14,10 +14,10 @@ mu_2 = 0.3
 unit_inverval = [0.1, 0.3, 0.6, 0.9]
 
 # arguments for compute_fixed_point
-kwargs = {:err_tol => 1e-5, :max_iter => 200, :verbose => true,
-          :print_skip => 30}
+kwargs = Dict(:err_tol => 1e-5, :max_iter => 200, :verbose => true,
+          :print_skip => 30)
 
-rough_kwargs = {:atol => 1e-4}
+rough_kwargs = Dict(:atol => 1e-4)
 
 T(x, mu) = 4.0 * mu * x * (1.0 - x)
 

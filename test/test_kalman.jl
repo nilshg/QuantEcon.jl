@@ -11,7 +11,7 @@ G = eye(2) .* .5
 R = eye(2) .* 0.2
 kf = Kalman(A, G, Q, R)
 
-rough_kwargs = {:atol => 1e-2, :rtol => 1e-4}
+rough_kwargs = Dict(:atol => 1e-2, :rtol => 1e-4)
 
 sig_inf, kal_gain = stationary_values(kf)
 

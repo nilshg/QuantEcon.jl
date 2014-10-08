@@ -4,7 +4,7 @@ using QuantEcon
 using Base.Test
 using FactCheck
 
-rough_kwargs = {:atol => 1e-8, :rtol => 1e-8}
+rough_kwargs = Dict(:atol => 1e-8, :rtol => 1e-8)
 
 # set up
 ρ, σ_u = rand(2)

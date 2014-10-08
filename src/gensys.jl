@@ -186,7 +186,7 @@ function gensys(F::Base.LinAlg.GeneralizedSchur, c, ψ, π, div)
     end
 
     if isempty(veta1)
-        unique = 1
+        unique = true
     else
         loose = veta1-veta*veta'*veta1
         ul, dl, vl = svd(loose)

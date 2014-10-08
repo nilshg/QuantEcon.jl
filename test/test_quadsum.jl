@@ -4,7 +4,7 @@ using QuantEcon
 using Base.Test
 using FactCheck
 
-rough_kwargs = {:atol => 1e-10, :rtol => 1e-10}
+rough_kwargs = Dict(:atol => 1e-10, :rtol => 1e-10)
 
 
 facts("Testing quadsums.jl") do

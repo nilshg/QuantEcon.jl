@@ -198,8 +198,8 @@ function gensys(F::Base.LinAlg.GeneralizedSchur, c, ψ, π, div)
     if unique
         # info("gensys: Unique solution!")
         eu[2] = 1
-    else
-        println("Indeterminacy. $nloose loose endog errors.")
+    # else
+    #     println("Indeterminacy. $nloose loose endog errors.")
     end
 
     # Cast as an int because we use it as an int!
